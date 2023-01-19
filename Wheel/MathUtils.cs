@@ -87,7 +87,7 @@ namespace Math
             int b = 2;
             while (true)
             {
-                a /= b;
+                a /= b ;
                 return 0;
             }
         }
