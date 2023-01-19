@@ -1,12 +1,28 @@
 > BY: Carter Weldon, Braedon Trumpie, Connall Pierson
 
+DESCRIPTION:
+Our NuGet package will be utilized so that you ( the person reading this ) can use all sorts of functions.
+( read the "what not to do" to find out what functions there are. )
+We created this NuGet package to really understand what is going on behind the scenes. it is hard sometimes to 
+understand what functions do what but actually going behind the scene and recreating functions is why we created
+this NuGet package.
+- - - - 
+
+EXPLANATION:
+
+MathUtils: recreating math functions. ( Ex: Power , SquareRoot , AbsoluteValue )
+ArrayUtils: recreating array functions. ( Ex: Average , Max , Min )
+StringUtils: recreating string functions. ( Ex: ToLower , Length , Reverse )
+
+- - - - 
+
 DETAILS:
 You will create 3 static classes all encapsulated in 1 common namespace:
 StringUtils
 ArrayUtils
 MathUtils
-
-- - > StringUtils
+- - - -
+ - > StringUtils
 
 - what NOT to do:
 ToUpper /
@@ -23,7 +39,7 @@ HasLetter
 
 - - - - - - - - -
 
-- - > ArrayUtils
+- > ArrayUtils
 
 - what NOT to do:
 Average /
@@ -41,7 +57,7 @@ Product
 
 - - - - - - - - -
 
-- - > MathUtils
+ - > MathUtils
 
 - what NOT to do:
 Power /
