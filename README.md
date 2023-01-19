@@ -1,1 +1,62 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=9797358)
+> BY: Carter Weldon, Braedon Trumpie, Connall Pierson
+
+DETAILS:
+You will create 3 static classes all encapsulated in 1 common namespace:
+StringUtils
+ArrayUtils
+MathUtils
+
+- - > StringUtils
+
+- what NOT to do:
+ToUpper /
+ToLower /
+Length /
+Reverse /
+CountVowels /
+CountConsonants /
+HasLetter 
+
+- What you SHOULD do:
+
+> make these without using the command prompted by the computer.
+
+- - - - - - - - -
+
+- - > ArrayUtils
+
+- what NOT to do:
+Average /
+Max /
+Min /
+SortAscending /
+SortDescending /
+Sum /
+Product 
+
+- What you SHOULD do: 
+
+> make these without using the command prompted by the computer.
+>ArrayUtils - Each Array function should have at least 1 overload. For example, Average(int[]), and  Array(double[])
+
+- - - - - - - - -
+
+- - > MathUtils
+
+- what NOT to do:
+Power /
+SquareRoot /
+AbsoluteValue /
+Min /
+Max /
+Add /
+Subtract /
+Divide /
+Multiply 
+
+- What you SHOULD do:
+
+> make these without using the command prompted by the computer.
+>MathUtils - Each Math function should have at least 2 overloads. For example, Power(int, int), Power(double, double) and Power(float, float)
+
+- - - - - - - - - 
