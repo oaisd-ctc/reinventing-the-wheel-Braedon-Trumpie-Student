@@ -21,7 +21,22 @@ namespace Math
         //Max
         // < parameter name = max">
         //OverloadMax
-
+        public static int Max(int[] max)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                if (a > b)
+                {
+                    return a;
+                }
+                else if (b < a)
+                {
+                    return b;
+                }
+            }
+        }
         //Add
         // < parameter name = "add">
         //OverloadAdd
@@ -36,6 +51,16 @@ namespace Math
             }
         }
         public static double Add(double[] add)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                a += b;
+                return 0;
+            }
+        }
+        public static float Add(float[] add)
         {
             int a = 1;
             int b = 2;
@@ -68,6 +93,16 @@ namespace Math
                 return 0;
             }
         }
+        public static float Subtract(float[] sub)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                a -= b;
+                return 0;
+            }
+        }
         //Divide
         // < parameter name = "d">
         //OverloadDivide
@@ -87,7 +122,17 @@ namespace Math
             int b = 2;
             while (true)
             {
-                a /= b ;
+                a /= b;
+                return 0;
+            }
+        }
+        public static float Divide(float[] d)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                a /= b;
                 return 0;
             }
         }
@@ -105,6 +150,16 @@ namespace Math
             }
         }
         public static double Multiply(double[] mult)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                a *= b;
+                return 0;
+            }
+        }
+        public static float Multiply(float[] mult)
         {
             int a = 1;
             int b = 2;
