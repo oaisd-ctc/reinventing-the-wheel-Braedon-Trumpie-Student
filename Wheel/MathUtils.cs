@@ -17,11 +17,90 @@ namespace Math
         //Min
         // < parameter name = "min">
         //OverloadMin
-
+        public static int Min(int min)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                if (a < b)
+                {
+                    return a;
+                }
+                else if (b > a)
+                {
+                    return b;
+                }
+            }
+        }
+        public static double Min(double min)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                if (a < b)
+                {
+                    return a;
+                }
+                else if (b > a)
+                {
+                    return b;
+                }
+            }
+        }
+        public static float Min(float min)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                if (a < b)
+                {
+                    return a;
+                }
+                else if (b > a)
+                {
+                    return b;
+                }
+            }
+        }
         //Max
         // < parameter name = max">
         //OverloadMax
-        public static int Max(int[] max)
+        public static int Max(int max)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                if (a > b)
+                {
+                    return a;
+                }
+                else if (b < a)
+                {
+                    return b;
+                }
+            }
+        }
+        public static double Max(double max)
+        {
+            int a = 1;
+            int b = 2;
+            while (true)
+            {
+                if (a > b)
+                {
+                    return a;
+                }
+                else if (b < a)
+                {
+                    return b;
+                }
+            }
+        }
+        public static float Max(float max)
         {
             int a = 1;
             int b = 2;
@@ -40,7 +119,7 @@ namespace Math
         //Add
         // < parameter name = "add">
         //OverloadAdd
-        public static int Add(int[] add)
+        public static int Add(int add)
         {
             int a = 1;
             int b = 2;
@@ -50,7 +129,7 @@ namespace Math
                 return 0;
             }
         }
-        public static double Add(double[] add)
+        public static double Add(double add)
         {
             int a = 1;
             int b = 2;
@@ -60,7 +139,7 @@ namespace Math
                 return 0;
             }
         }
-        public static float Add(float[] add)
+        public static float Add(float add)
         {
             int a = 1;
             int b = 2;
@@ -73,7 +152,7 @@ namespace Math
         //Subtract
         // < parameter name = "sub">
         //OverloadSubtract
-        public static int Subtract(int[] sub)
+        public static int Subtract(int sub)
         {
             int a = 1;
             int b = 2;
@@ -83,7 +162,7 @@ namespace Math
                 return 0;
             }
         }
-        public static double Subtract(double[] sub)
+        public static double Subtract(double sub)
         {
             int a = 1;
             int b = 2;
@@ -93,7 +172,7 @@ namespace Math
                 return 0;
             }
         }
-        public static float Subtract(float[] sub)
+        public static float Subtract(float sub)
         {
             int a = 1;
             int b = 2;
@@ -106,7 +185,7 @@ namespace Math
         //Divide
         // < parameter name = "d">
         //OverloadDivide
-        public static int Divide(int[] d)
+        public static int Divide(int d)
         {
             int a = 1;
             int b = 2;
@@ -116,7 +195,7 @@ namespace Math
                 return 0;
             }
         }
-        public static double Divide(double[] d)
+        public static double Divide(double d)
         {
             int a = 1;
             int b = 2;
@@ -126,7 +205,7 @@ namespace Math
                 return 0;
             }
         }
-        public static float Divide(float[] d)
+        public static float Divide(float d)
         {
             int a = 1;
             int b = 2;
@@ -139,7 +218,7 @@ namespace Math
         //Multiply
         // < parameter name = "mult">
         //OverloadMultiply
-        public static int Multiply(int[] mult)
+        public static int Multiply(int mult)
         {
             int a = 1;
             int b = 2;
@@ -149,7 +228,7 @@ namespace Math
                 return 0;
             }
         }
-        public static double Multiply(double[] mult)
+        public static double Multiply(double mult)
         {
             int a = 1;
             int b = 2;
@@ -159,7 +238,7 @@ namespace Math
                 return 0;
             }
         }
-        public static float Multiply(float[] mult)
+        public static float Multiply(float mult)
         {
             int a = 1;
             int b = 2;
