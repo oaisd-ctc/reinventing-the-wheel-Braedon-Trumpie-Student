@@ -270,7 +270,7 @@ namespace Arrays
         public static int GetNumberOfOutliers(double[] a)
         {
             int nums = 0;
-            foreach(int x in a)
+            foreach(double x in a)
                 if(x > (GetQ3(a) + (1.5 * GetIQR(a))) || x < (GetQ1(a) - (1.5 * GetIQR(a))))
                     nums++;
             return nums;
