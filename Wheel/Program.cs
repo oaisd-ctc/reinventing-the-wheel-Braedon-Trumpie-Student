@@ -1,3 +1,4 @@
+
 ﻿using String;
 public class Program
 {
@@ -14,6 +15,5 @@ public class Program
         Console.WriteLine(StringUtils.CapslastLetter("connall"));
         Console.WriteLine(StringUtils.IsPalindrome("Racecar"));
         Console.WriteLine(StringUtils.StringRemoveSpaces("C o n na l l"));
-
     }
 }
