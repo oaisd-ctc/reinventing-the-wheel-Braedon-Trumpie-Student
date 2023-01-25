@@ -173,14 +173,14 @@ namespace Arrays
         }
         public static int Product(int[] a)
         {
-            int sum = 0;
+            int sum = 1;
             foreach (int x in a)
                 sum *= x;
             return sum;
         }
         public static double Product(double[] a)
         {
-            double sum = 0;
+            double sum = 1;
             foreach (double x in a)
                 sum *= x;
             return sum;
@@ -241,7 +241,7 @@ namespace Arrays
                 else
                     return (b[(medIndex + 1) / 2] + b[((medIndex + 1) / 2) - 1]) / 2;
             }
-            //FindQ3 if array length is even
+            //Find Q1 if array length is even
             else
             {
                 if(a.Length % 4 == 0)
