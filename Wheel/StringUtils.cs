@@ -42,9 +42,16 @@ namespace String
         public static string Reverse(string a)
         {
             // StringUtils.ToLower(a);
-            char[] charArray = a.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
+            char[] stringArray = a.ToCharArray();
+
+            string reverse = string.Empty;
+
+            for (int i = stringArray.Length - 1; i >= 0; i--)
+            {
+                reverse += stringArray[i];
+            }
+            
+            return reverse;
         }
         public static int CountVowels(string s)
         {
