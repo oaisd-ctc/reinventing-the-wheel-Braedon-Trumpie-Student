@@ -117,7 +117,7 @@ namespace Arrays
             }
         }
 
-        //Sort array b in descending order
+        //Sort array a in descending order
         public static void SortDescending(int[] a)
         {
             int max;
