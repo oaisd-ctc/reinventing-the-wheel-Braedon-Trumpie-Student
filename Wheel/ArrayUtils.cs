@@ -210,7 +210,7 @@ namespace Arrays
         public static bool IsSymmetrical(double[] a)
         {
             for(int i = 0; i < (a.Length / 2) + 1; i++)
-                if(a[i] != a[a.Length - i -1])
+                if(a[i] != a[a.Length - i - 1])
                     return false;
             return true;
         }
