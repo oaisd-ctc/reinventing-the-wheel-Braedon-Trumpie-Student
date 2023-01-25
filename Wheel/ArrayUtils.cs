@@ -53,18 +53,7 @@ namespace Arrays
                     min = i;
             return min;
         }
-        public static int Min(int[] a, int start)
-        {
-            int min = 2147483647;
-            for(int i = start; i < a.Length; i++)
-            {
-                if(a[i] < min)
-                {
-                    min = a[i];
-                }
-            }
-            return min;
-        }
+        
 
         //Sort array a in ascending order
         public static void SortAscending(int[] a)
