@@ -2,172 +2,55 @@ namespace Math
 {
     public static class MathUtils
     {
-        //Power
-        // < parameter name = "p">
-        //OverloadPower
-
-        //SquareRoot
-        // < parameter name = "s">
-        //OverloadSquareRoot
-
-        //AbsoluteValue
-        // < parameter name = "v">
-        //OverloadAbsoluteValue
-
-        //Min
-        // < parameter name = "min">
-        //OverloadMin
-
-        //Max
-        // < parameter name = max">
-        //OverloadMax
-        public static int Max(int[] max)
+        // Return a^b
+        public static int Power(int a, int b)
         {
-            int a = 1;
-            int b = 2;
-            while (true)
+            for(int i = 0; i < b; i++)
             {
-                if (a > b)
+                a *= a;
+            }
+            return a;
+        }
+
+        public static double SquareRoot(int a)
+        {
+            double max = a;
+            double min = 0;
+            double prevMin = 0;
+            int precision = 0;
+            while(max * max > a)
+            {
+                max /= 2;
+                if(max * max < a)
                 {
-                    return a;
+                    min = max;
+                    max *= 2;
+                    while(min * min < a)
+                    {
+                        prevMin = min;
+                        min = (max + min) / 2;
+                        if(min * min > a)
+                        {
+                            max = min;
+                            min = prevMin;
+                            precision++;
+                        }
+                    }
                 }
-                else if (b < a)
-                {
-                    return b;
-                }
+                if(precision > 0)
+                    break;
             }
+            return (max + min) / 2;
         }
-        //Add
-        // < parameter name = "add">
-        //OverloadAdd
-        public static int Add(int[] add)
+        public static int GetNumerator(double a)
         {
-            int a = 1;
-            int b = 2;
-            while (true)
+            //int times = 0;
+            double num = a - (int)a;
+            while(((int)num) - num != 0)
             {
-                a += b;
-                return 0;
+                num *= 10;
             }
-        }
-        public static double Add(double[] add)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a += b;
-                return 0;
-            }
-        }
-        public static float Add(float[] add)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a += b;
-                return 0;
-            }
-        }
-        //Subtract
-        // < parameter name = "sub">
-        //OverloadSubtract
-        public static int Subtract(int[] sub)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a -= b;
-                return 0;
-            }
-        }
-        public static double Subtract(double[] sub)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a -= b;
-                return 0;
-            }
-        }
-        public static float Subtract(float[] sub)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a -= b;
-                return 0;
-            }
-        }
-        //Divide
-        // < parameter name = "d">
-        //OverloadDivide
-        public static int Divide(int[] d)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a /= b;
-                return 0;
-            }
-        }
-        public static double Divide(double[] d)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a /= b;
-                return 0;
-            }
-        }
-        public static float Divide(float[] d)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a /= b;
-                return 0;
-            }
-        }
-        //Multiply
-        // < parameter name = "mult">
-        //OverloadMultiply
-        public static int Multiply(int[] mult)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a *= b;
-                return 0;
-            }
-        }
-        public static double Multiply(double[] mult)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a *= b;
-                return 0;
-            }
-        }
-        public static float Multiply(float[] mult)
-        {
-            int a = 1;
-            int b = 2;
-            while (true)
-            {
-                a *= b;
-                return 0;
-            }
+            return (int)num;
         }
     }
 }

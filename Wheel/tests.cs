@@ -109,4 +109,9 @@ public static class Tests
     public static void GetNumberOfOutliers()
     { Assert.Equal(1, Arrays.ArrayUtils.GetNumberOfOutliers(new double[]{-8, 1, 2, 6, 7, 26})); }
 
+    //Math
+
+    [Fact]
+    public static void GetNumerator()
+    { Assert.Equal(567, Math.MathUtils.GetNumerator(9823.567)); }
 }
