@@ -2,6 +2,13 @@ namespace String
 {
     public static class StringUtils
     {
+        ///<summary>
+        ///Capitalizes letters in strings
+        ///</summary>
+        ///<param name="a">The users string.</param>
+        ///<returns>
+        ///A fully capitalized string
+        ///</returns>
         public static string ToUpper(string a)
         {
             string output = "";
@@ -15,7 +22,15 @@ namespace String
                     output += a[i];
             }
             return output;
+
         }
+        ///<summary>
+        ///Turns letters in strings into a lowercase form
+        ///</summary>
+        ///<param name="a">The users string.</param>
+        ///<returns>
+        ///A fully lowercase string
+        ///</returns>
         public static string ToLower(string a)
         {
             string output = "";
@@ -30,6 +45,13 @@ namespace String
             }
             return output;
         }
+        ///<summary>
+        ///Takes a string and counts how many characters are in it
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///An int of number of characters
+        ///</returns>
         public static int Length(string s)
         {
             int Length = 0;
@@ -39,6 +61,13 @@ namespace String
             }
             return Length;
         }
+        ///<summary>
+        ///Reverses a string
+        ///</summary>
+        ///<param name="a">The users string.</param>
+        ///<returns>
+        ///Returns users string but in reverse
+        ///</returns>
         public static string Reverse(string a)
         {
             // StringUtils.ToLower(a);
@@ -50,9 +79,16 @@ namespace String
             {
                 reverse += stringArray[i];
             }
-            
+
             return reverse;
         }
+        ///<summary>
+        ///Count the amount of vowels in a string
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///Returns an int of number of vowels
+        ///</returns>
         public static int CountVowels(string s)
         {
             StringUtils.ToLower(s);
@@ -67,6 +103,13 @@ namespace String
             }
             return Vowels;
         }
+        ///<summary>
+        ///Count the amount of cnsonants in a string
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///Returns an int of number of consonants
+        ///</returns>
         public static int CountConsonants(string s)
         {
             StringUtils.ToLower(s);
@@ -86,6 +129,14 @@ namespace String
             }
             return Consonants;
         }
+        ///<summary>
+        ///Searches a string to see if it has a specific character
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<param name="a">Character your looking for.</param>
+        ///<returns>
+        ///Returns a bool saying if it has said letter
+        ///</returns>
         public static bool HasLetter(string s, char a)
         {
             StringUtils.ToLower(s);
@@ -103,6 +154,13 @@ namespace String
             return false;
 
         }
+        ///<summary>
+        ///Capitalizes the first letter of a string
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///Returns a string with a capital first letter
+        ///</returns>
         public static string CapsfirstLetter(string s)
         {
 
@@ -112,6 +170,13 @@ namespace String
             }
             return $"{char.ToUpper(s[0])}{s[1..]}";
         }
+         ///<summary>
+        ///Capitalizes the last letter of a string
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///Returns a string with a capital last letter
+        ///</returns>
 
         public static string CapslastLetter(string s)
         {
@@ -127,11 +192,25 @@ namespace String
             }
             return new string(stringArray);
         }
+         ///<summary>
+        ///Checks to see if the string is a palindrome
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///Returns a bool on whether the string is a palindrome
+        ///</returns>
         public static bool IsPalindrome(string s)
         {
             string bleh = StringUtils.ToLower(s);
-            return bleh.SequenceEqual(bleh.Reverse());
+            return bleh.SequenceEqual(StringUtils.Reverse(bleh));
         }
+         ///<summary>
+        ///Takes out spaces of a given string
+        ///</summary>
+        ///<param name="s">The users string.</param>
+        ///<returns>
+        ///Returns a string without spaces in it
+        ///</returns>
 
         public static string StringRemoveSpaces(string s)
         {
