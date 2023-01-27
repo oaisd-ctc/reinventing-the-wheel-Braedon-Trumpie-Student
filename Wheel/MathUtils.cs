@@ -345,7 +345,5 @@ namespace Math
             return x + tax;
         }
 
-
-
     }
 }

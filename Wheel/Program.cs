@@ -1,5 +1,6 @@
-﻿using String;
+using String;
 using Math;
+using Arrays;
 
 public class Program
 {
@@ -16,9 +17,5 @@ public class Program
         Console.WriteLine(StringUtils.CapslastLetter("connall"));
         Console.WriteLine(StringUtils.IsPalindrome("Racecar"));
         Console.WriteLine(StringUtils.StringRemoveSpaces("C o n na l l"));
-        //other
-        Console.WriteLine(MathUtils.Min(24323,5456));
-        Console.WriteLine(MathUtils.Max(23,234));
-
     }
 }

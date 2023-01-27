@@ -70,7 +70,7 @@ namespace String
         ///</returns>
         public static string Reverse(string a)
         {
-            // StringUtils.ToLower(a);
+
             char[] stringArray = a.ToCharArray();
 
             string reverse = string.Empty;
