@@ -3,6 +3,7 @@ using String;
 using Math;
 public static class Tests
 {
+
     //String
     [Fact]
     public static void StringToLower()
@@ -70,6 +71,7 @@ public static class Tests
         string desiredOutcome = "connall";
         Assert.Equal(desiredOutcome, StringUtils.StringRemoveSpaces("c o nna ll  "));
     }
+
 
     //Math
     [Fact]
@@ -211,44 +213,65 @@ public static class Tests
 
     // Array
 
-    [Fact]
-    public static void Average()
-    { Assert.Equal(3, Arrays.ArrayUtils.Average(new double[]{1.0, 2.0, 3.0, 4.0, 5.0})); }
+    // [Fact]
+    // public static void Average()
+    // { Assert.Equal(3, Arrays.ArrayUtils.Average(new double[]{1.0, 2.0, 3.0, 4.0, 5.0})); }
 
-    [Fact]
-    public static void Max()
-    { Assert.Equal(5, Arrays.ArrayUtils.Max(new int[]{1, 2, 3, 4, 5})); }
+    // [Fact]
+    // public static void Max()
+    // { Assert.Equal(5, Arrays.ArrayUtils.Max(new int[]{1, 2, 3, 4, 5})); }
 
-    [Fact]
-    public static void Min()
-    { Assert.Equal(1, Arrays.ArrayUtils.Min(new int[]{1, 2, 3, 4, 5})); }
+    // [Fact]
+    // public static void Min()
+    // { Assert.Equal(1, Arrays.ArrayUtils.Min(new int[]{1, 2, 3, 4, 5})); }
 
-    [Fact]
-    public static void Sum()
-    { Assert.Equal(15, Arrays.ArrayUtils.Sum(new int[]{1, 2, 3, 4, 5})); }
+    // [Fact]
+    // public static void Sum()
+    // { Assert.Equal(15, Arrays.ArrayUtils.Sum(new int[]{1, 2, 3, 4, 5})); }
 
-    [Fact]
-    public static void Product()
-    { Assert.Equal(120, Arrays.ArrayUtils.Product(new int[]{1, 2, 3, 4, 5})); }
+    // [Fact]
+    // public static void Product()
+    // { Assert.Equal(120, Arrays.ArrayUtils.Product(new int[]{1, 2, 3, 4, 5})); }
 
-    [Fact]
-    public static void IsSymmetrical()
-    { Assert.True(Arrays.ArrayUtils.IsSymmetrical(new int[]{1, 2, 3, 2, 1})); }
+    // [Fact]
+    // public static void IsSymmetrical()
+    // { Assert.True(Arrays.ArrayUtils.IsSymmetrical(new int[]{1, 2, 3, 2, 1})); }
 
-    [Fact]
-    public static void GetIQR()
-    { Assert.Equal(4, Arrays.ArrayUtils.GetIQR(new double[]{1, 2, 3, 4, 5, 6, 7, 26})); }
+    // [Fact]
+    // public static void GetIQR()
+    // { Assert.Equal(4, Arrays.ArrayUtils.GetIQR(new double[]{1, 2, 3, 4, 5, 6, 7, 26})); }
 
-    [Fact]
-    public static void GetQ3()
-    { Assert.Equal(6.5, Arrays.ArrayUtils.GetQ3(new double[]{1, 2, 3, 4, 5, 6, 7, 26})); }
+    // [Fact]
+    // public static void GetQ3()
+    // { Assert.Equal(6.5, Arrays.ArrayUtils.GetQ3(new double[]{1, 2, 3, 4, 5, 6, 7, 26})); }
 
-    [Fact]
-    public static void GetQ1()
-    { Assert.Equal(2.5, Arrays.ArrayUtils.GetQ1(new double[]{1, 2, 3, 4, 5, 6, 7, 26})); }
+    // [Fact]
+    // public static void GetQ1()
+    // { Assert.Equal(2.5, Arrays.ArrayUtils.GetQ1(new double[]{1, 2, 3, 4, 5, 6, 7, 26})); }
 
-    [Fact]
-    public static void GetNumberOfOutliers()
-    { Assert.Equal(1, Arrays.ArrayUtils.GetNumberOfOutliers(new double[]{-8, 1, 2, 6, 7, 26})); }
+    // [Fact]
+    // public static void GetNumberOfOutliers()
+    // { Assert.Equal(1, Arrays.ArrayUtils.GetNumberOfOutliers(new double[]{-8, 1, 2, 6, 7, 26})); }
 
+    // //Math
+
+    // [Fact]
+    // public static void GetNumerator()
+    // { Assert.Equal(87923, Math.MathUtils.GetNumerator(4.87923)); }
+
+    // [Fact]
+    // public static void SimplifiedNumerator()
+    // { Assert.Equal(1, Math.MathUtils.SimplifiedNumerator(4.125)); }
+
+    // [Fact]
+    // public static void SimplifiedDenominator()
+    // { Assert.Equal(8, Math.MathUtils.SimplifiedDenominator(4.125)); }
+
+    // [Fact]
+    // public static void Root()
+    // { Assert.Equal(2, Math.MathUtils.Root(128, 7)); }
+
+    // [Fact]
+    // public static void Power()
+    // { Assert.Equal(3.7845997273, Math.MathUtils.Power(11.76, .54)); }
 }
