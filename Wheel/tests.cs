@@ -1,6 +1,7 @@
 using Xunit;
 using String;
 using Math;
+using Arrays;
 public static class Tests
 {
 
