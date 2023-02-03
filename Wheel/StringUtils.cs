@@ -71,13 +71,12 @@ namespace String
         public static string Reverse(string a)
         {
 
-            char[] stringArray = a.ToCharArray();
-
+            
             string reverse = string.Empty;
 
-            for (int i = stringArray.Length - 1; i >= 0; i--)
+            for (int i = a.Length - 1; i >= 0; i--)
             {
-                reverse += stringArray[i];
+                reverse += a[i];
             }
 
             return reverse;
